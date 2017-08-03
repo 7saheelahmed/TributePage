@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'sherlock';
+  src: url(/home/saheelahmed2/Frontend/fonts/Sherlock.TTF);
+  format('truetype');
+}
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+body {
+  background-image: url("https://static.tumblr.com/1fcb88d32ab6c642df257a4c3e138dd4/km8ysjr/W1smysdkk/tumblr_static_sherlock-wallpaper-pattern-web.jpg");
+  background-color: #cccccc;
+  /*grey*/
+}
+
+h1 {
+  color: #000;
+  /*  Black*/
+  font-size:6em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+.img-text {
+  color: white;
+}
+
+h2 {
+  color: black;
+  font-family: 'Droid Serif', serif;
+  padding-top: -10px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.main-picture {
+  border-style: double;
+  border-width: 7px;
+  border-radius: 10%;
+}
+
+.cast-picture {
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.centerBlock {
+  display: table;
+  margin: 0 auto;
+}
+
+
+/* Underline From Center */
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: greyscale;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 52%;
+  right: 52%;
+  bottom: 0;
+  background: #FFFFFF;
+  /*White*/
+  border-radius: 50%;
+ 
+  border-bottom: 2px solid #FFFFFF; 
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.profile-card:hover .hvr-underline-from-center:before,
+.profile-card:focus .hvr-underline-from-center:before,
+.profile-card:active .hvr-underline-from-center:before {
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #000;
+  /*black*/
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+label:hover {
+  color: #000;
+  /*black*/
+}
+
+label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 50px;
+  content: ;
+  vertical-align: text-top;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(circle at center, #CCC 50%, transparent 50%);
+}
+
+ul {
+  list-style-type: square;
+  color: #FFF;
+  /*White*/
+  font-family: 'Unkempt', cursive;
+  font-size: 1.5em
+}
+
+p {
+  color: #FFF;
+  /*White*/
+}
+
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+  /*White*/
+}
+
+section {
+  padding: 0 20px;
+}
+
+#toggle0:checked ~ #expand {
+  height: 32em;
+}
+
+#toggle0:checked ~ label::before {
+  content: ;
+}
+
+#toggle1:checked ~ #expand {
+  height: 37em;
+}
+
+#toggle1:checked ~ label::before {
+  content: ;
+}
+
+#toggle2:checked ~ #expand {
+  height: 41em;
+}
+
+#toggle2:checked ~ label::before {
+  content: ;
+}
+
+#toggle3:checked ~ #expand {
+  height: 40em;
+}
+
+#toggle3:checked ~ label::before {
+  content: ;
+}
+
+#toggle4:checked ~ #expand {
+  height: 28em;
+}
+
+#toggle4:checked ~ label::before {
+  content: ;
+}
+
+#toggle5:checked ~ #expand {
+  height: 35em;
+}
+
+#toggle5:checked ~ label::before {
+  content: ;
+}
+
+.green-box {
+  background: #0F270C;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.red-box {
+  background: #801515;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.orange-box {
+  background: #95320B;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.purple-box {
+  background: #4C0049;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blue-box {
+  background: #10106D;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.maroon-box {
+  background: #690015;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#font-center {
+  text-align: center;
+}
